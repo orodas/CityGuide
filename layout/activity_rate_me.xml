@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/global_color_brown_accent"
+    tools:context="com.robotemplates.cityguide.RateMe">
+
+    <EditText
+        android:id="@+id/editText_myreview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter Review"
+        android:inputType="textMultiLine"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="11dp" />
+
+    <Button
+        android:id="@+id/BReview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/global_color_gray_accent"
+        android:hint="Submit"
+        android:onClick="onRateClick" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/BReview"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="32dp"
+        android:numStars="5"
+        android:stepSize="1" />
+</RelativeLayout>
